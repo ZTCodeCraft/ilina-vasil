@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Васил &amp; Илина</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="#" class="nav-link nav-link--active">Преди сватбата</a>
+    <a href="#" class="nav-link">След сватбата</a>
+  </nav>
+
+  <!-- SLIDE 1 — Video hero -->
+  <section class="slide slide-1">
+    <video class="s1-video" autoplay muted loop playsinline>
+      <source src="website/Graphics/Slide 1/BG video.mp4" type="video/mp4">
+    </video>
+
+    <img class="s1-badge s1-badge--left"
+         src="website/Graphics/Slide 1/text left.png"
+         alt="12 Септември 2026">
+    <img class="s1-badge s1-badge--right"
+         src="website/Graphics/Slide 1/text right.png"
+         alt="Penelope Palace Поморие">
+
+    <div class="s1-center">
+      <h1 class="s1-title">Васил &amp; Илина</h1>
+      <div class="s1-bottom-row">
+        <img class="s1-deco s1-deco--left"
+             src="website/Graphics/Slide 1/1.png"
+             alt="">
+        <img class="s1-tape"
+             src="website/Graphics/Slide 1/text middle.png"
+             alt="ще се женят">
+        <img class="s1-deco s1-deco--right"
+             src="website/Graphics/Slide 1/2.png"
+             alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 2 — Countdown -->
+  <section class="slide slide-2">
+    <img class="s2-ribbon s2-ribbon--left"
+         src="website/Graphics/Slide 2/left.png"
+         alt="">
+    <img class="s2-ribbon s2-ribbon--right"
+         src="website/Graphics/Slide 2/right.png"
+         alt="">
+
+    <div class="s2-content">
+      <p class="s2-label">а до сватбата остават:</p>
+      <div class="countdown">
+        <div class="countdown__unit">
+          <span class="countdown__num" id="days">---</span>
+          <span class="countdown__lbl">Дни</span>
+        </div>
+        <span class="countdown__sep">:</span>
+        <div class="countdown__unit">
+          <span class="countdown__num" id="hours">--</span>
+          <span class="countdown__lbl">Часа</span>
+        </div>
+        <span class="countdown__sep">:</span>
+        <div class="countdown__unit">
+          <span class="countdown__num countdown__num--blue" id="minutes">--</span>
+          <span class="countdown__lbl">Минути</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 3 — Invitation -->
+  <section class="slide slide-3">
+    <div class="s3-inner">
+      <div class="s3-text">
+        <h2 class="s3-heading">Скъпи семейство и приятели,</h2>
+        <p>с радост и вълнение ви каним да споделите с нас един от най-специалните моменти в живота ни – деня, в който ще кажем своето „Да".</p>
+        <p>За нас ще бъде истинско щастие да бъдете част от този красив и емоционален празник, изпълнен с любов, усмивки и споделени мигове.</p>
+        <p>За ваше и наше удобство на този сайт ще откриете цялата важна информация за събитието – точна локация, програма на деня, дрескод, полезни детайли и начин за потвърждение на присъствието.</p>
+      </div>
+      <div class="s3-photos">
+        <img src="website/Graphics/Slide 3/1.png" alt="Васил и Илина">
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 4 — RSVP -->
+  <section class="slide slide-4" id="rsvp">
+    <img class="s4-deco s4-deco--palm"
+         src="website/Graphics/Slide 4/1.png"
+         alt="">
+    <img class="s4-deco s4-deco--dove"
+         src="website/Graphics/Slide 4/2.png"
+         alt="">
+
+    <div class="s4-card">
+      <h2 class="s4-title">Ще присъствате ли?</h2>
+      <p class="s4-body">Молим всички гости да потвърдят своето присъствие</p>
+      <span class="s4-date">преди 01.08.2026 г.,</span>
+      <p class="s4-footer">за да можем да планираме всеки детайл от празника с внимание към всеки от вас.</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfOvAhcLlxyhWxhb4xCVQssrms3Wsq87X0jwzZfsXOL7xrSHA/viewform" target="_blank" rel="noopener" class="s4-btn">Отговорете тук</a>
+    </div>
+  </section>
+
+  <!-- SLIDE 5 — Location -->
+  <section class="slide slide-5">
+    <div class="s5-inner">
+
+      <div class="s5-left">
+        <div class="s5-heading">
+          <span class="s5-heading-sub">Нашата морска сватба в</span>
+          <h2 class="s5-heading-main">Поморие</h2>
+        </div>
+        <p class="s5-body">Избрахме да отпразнуваме сватбения си ден в красивия морски град Поморие, в ресторанта на хотел <strong><em>Penelope Palace</em></strong>.</p>
+        <div class="s5-map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1038.9937691632952!2d27.602055015842126!3d42.56127712362718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a697dac9602301%3A0xd3378b8ee5def9e5!2z0J_QtdC90LXQu9C-0L_QtSDQv9Cw0LvQsNGB!5e0!3m2!1sbg!2sbg!4v1773930895432!5m2!1sbg!2sbg"
+            style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Penelope Palace Hotel, Поморие">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="s5-right">
+        <img class="s5-photos" src="website/Graphics/Slide 5/1.png" alt="Васил и Илина на плажа">
+        <div class="s5-shells">
+          <img class="s5-shells-left"  src="website/Graphics/Slide 5/3.png" alt="">
+          <img class="s5-shells-right" src="website/Graphics/Slide 5/2.png" alt="">
+        </div>
+        <p class="s5-ritual">Изнесеният ритуал ще се проведе на плажа пред хотела, където ще кажем своето „Да" с гледка към морето.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SLIDE 6 — Program -->
+  <section class="slide slide-6">
+    <div class="s6-card">
+      <h2 class="s6-title">Програма за деня</h2>
+      <div class="s6-grid">
+        <div class="s6-item">
+          <img src="website/Graphics/Slide 6/1.png" alt="Пръстени" class="s6-icon">
+          <span class="s6-time">17:00 ч</span>
+          <span class="s6-desc">Церемония на плажа</span>
+        </div>
+        <div class="s6-item">
+          <img src="website/Graphics/Slide 6/2.png" alt="Фотоапарат" class="s6-icon">
+          <span class="s6-time">17:30 - 18:30 ч</span>
+          <span class="s6-desc">Снимки с младоженците</span>
+        </div>
+        <div class="s6-item">
+          <img src="website/Graphics/Slide 6/3.png" alt="Шампанско" class="s6-icon">
+          <span class="s6-time">18:00 ч</span>
+          <span class="s6-desc">Коктейл край басейна</span>
+        </div>
+        <div class="s6-item">
+          <img src="website/Graphics/Slide 6/4.png" alt="Маса" class="s6-icon">
+          <span class="s6-time">19:00 ч</span>
+          <span class="s6-desc">Начало на празненството</span>
+        </div>
+        <div class="s6-item">
+          <img src="website/Graphics/Slide 6/5.png" alt="Торта" class="s6-icon">
+          <span class="s6-time">22:30 ч</span>
+          <span class="s6-desc">Разрязване на тортата</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 7 — Q&A -->
+  <section class="slide slide-7">
+    <img class="s7-deco s7-deco--left"  src="website/Graphics/Slide 7/left.png"  alt="">
+    <img class="s7-deco s7-deco--right" src="website/Graphics/Slide 7/right.png" alt="">
+
+    <div class="s7-content">
+      <h2 class="s7-title">Въпроси &amp; Отговори</h2>
+
+      <div class="s7-qa">
+        <p class="s7-q">До кога трябва да потвърдим присъствието си?</p>
+        <p class="s7-a">Молим ви да потвърдите присъствието си най-късно <strong>до 01.08.2026 г.</strong>, за да можем да организираме празника по най-добрия начин.</p>
+      </div>
+
+      <div class="s7-qa">
+        <p class="s7-q">В колко часа трябва да пристигнем?</p>
+        <p class="s7-a">Официалната церемония по сключване на гражданския брак започва точно в 17:00 ч.<br>
+        Препоръчваме ви да пристигнете около 16:30 ч., за да имате достатъчно време спокойно да се ориентирате и да заемете местата си.</p>
+      </div>
+
+      <div class="s7-qa">
+        <p class="s7-q">Къде ще бъде изнесеният ритуал?</p>
+        <p class="s7-a">Изнесеният ритуал ще се проведе на плажа пред хотела, при подходящи метеорологични условия. Ще има указателна табела, а мястото е лесно откриваемо.</p>
+      </div>
+
+      <div class="s7-qa">
+        <p class="s7-q">Има ли възможности за настаняване наблизо?</p>
+        <p class="s7-a">Хотел „Пенелопа Палас" предлага преференциални цени за гостите на нашата сватба.<br>
+        При желание с радост ще съдействаме и с предложения за други места за настаняване в Поморие.</p>
+      </div>
+
+      <div class="s7-qa">
+        <p class="s7-q">Какъв е дрескодът?</p>
+        <p class="s7-a">Нямаме строго определен дреском. Най-важното за нас е да се чувствате удобно и да се насладите на празника.<br>
+        Все пак бихме се радвали да избегнем официалния анцуг, както и белите рокли.</p>
+      </div>
+
+      <div class="s7-qa">
+        <p class="s7-q">Можем ли да променим отговора си, след като вече сме попълнили формата?</p>
+        <p class="s7-a">Да, разбира се. Ако се наложи промяна, молим ви да се свържете с нас, за да уточним детайлите.</p>
+      </div>
+
+      <div class="s7-qa">
+        <p class="s7-q">Имате ли предпочитания за подаръци?</p>
+        <p class="s7-a">Вашето присъствие е най-ценният подарък за нас.<br>
+        Ако желаете да ни зарадвате допълнително, ще сме благодарни за паричен подарък.<br>
+        Ако желаете да поднесете цветя, бихме оценили вместо тях книга.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 8 — Thank you -->
+  <section class="slide slide-8">
+    <h2 class="s8-title">Благодарим за вниманието!</h2>
+    <p class="s8-subtitle">При допълнителни въпроси, знаете как да ни намерите 😘</p>
+
+    <div class="s8-gallery">
+      <img class="s8-pol s8-pol--left"  src="website/Graphics/Slide 8/1.png" alt="">
+      <div class="s8-main-wrap">
+        <img class="s8-envelope" src="website/Graphics/Slide 8/3.png" alt="">
+        <img class="s8-main-photo" src="website/Graphics/Slide 8/kiuchek gif.gif" alt="Васил и Илина">
+        <img class="s8-starfish" src="website/Graphics/Slide 8/4.png" alt="">
+        <img class="s8-shrek"    src="website/Graphics/Slide 8/shrek.png" alt="">
+      </div>
+      <img class="s8-pol s8-pol--right" src="website/Graphics/Slide 8/2.png" alt="">
+    </div>
+
+    <p class="s8-footer">Дизайнът само на тази страница е направен от Васил&nbsp;– очевидно най-красивата!</p>
+  </section>
+
+  <footer class="site-footer">
+    <p class="site-footer__text">Designed by Ilina &nbsp;✦&nbsp; Made by Zori</p>
+  </footer>
+
+  <script src="countdown.js"></script>
+</body>
+</html>
