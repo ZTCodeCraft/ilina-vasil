@@ -46,9 +46,12 @@ html {
   scroll-behavior: smooth;
 }
 
+.page-wrap {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Nunito', sans-serif;
-  overflow-x: hidden;
   background: var(--cream);
 }
 
@@ -168,7 +171,7 @@ body {
   transform: translateY(-10px) scale(1.04);
 }
 .s1-badge--left  { left:  clamp(1rem, 3.5vw, 4.5rem); animation: fadeInLeft  1s cubic-bezier(0.22, 1, 0.36, 1) 1.4s both; }
-.s1-badge--right { right: clamp(1rem, 3.5vw, 4.5rem); top: 9%; animation: fadeInRight 1s cubic-bezier(0.22, 1, 0.36, 1) 1.6s both; }
+.s1-badge--right { right: clamp(1rem, 3.5vw, 4.5rem); top: 6.5%; animation: fadeInRight 1s cubic-bezier(0.22, 1, 0.36, 1) 1.6s both; }
 
 /* Centre block: title + tape strip — absolutely placed so badges never overlap */
 .s1-center {
