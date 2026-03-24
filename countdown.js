@@ -27,3 +27,20 @@ function update() {
 
 update();
 setInterval(update, 10000); // refresh every 10 s
+
+// iOS Low Power Mode can block autoplay even for muted videos.
+// Retry playback on the first user gesture if autoplay was prevented.
+(function () {
+  const video = document.querySelector('.s1-video');
+  if (!video) return;
+
+  video.play().catch(function () {
+    function resumeOnInteraction() {
+      video.play().catch(function () {});
+      document.removeEventListener('touchstart', resumeOnInteraction);
+      document.removeEventListener('scroll', resumeOnInteraction);
+    }
+    document.addEventListener('touchstart', resumeOnInteraction, { passive: true });
+    document.addEventListener('scroll',     resumeOnInteraction, { passive: true });
+  });
+}());
