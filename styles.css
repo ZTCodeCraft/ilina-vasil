@@ -164,13 +164,24 @@ body {
   z-index: 2;
   height: clamp(220px, 24vw, 350px);
   top: 3%;
-  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  display: block;
+  cursor: pointer;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+              filter 0.4s ease;
+  animation: fadeInLeft 1s cubic-bezier(0.22, 1, 0.36, 1) 1.4s both;
+}
+
+.s1-badge img {
+  height: 100%;
+  width: auto;
+  display: block;
 }
 
 .s1-badge:hover {
-  transform: translateY(-10px) scale(1.04);
+  transform: translateY(-10px) scale(1.06);
+  filter: drop-shadow(0 8px 16px rgba(0,0,0,0.18));
 }
-.s1-badge--left  { left:  clamp(1rem, 3.5vw, 4.5rem); animation: fadeInLeft  1s cubic-bezier(0.22, 1, 0.36, 1) 1.4s both; }
+.s1-badge--left  { left:  clamp(1rem, 3.5vw, 4.5rem); }
 .s1-badge--right { right: clamp(1rem, 3.5vw, 4.5rem); top: 6.5%; animation: fadeInRight 1s cubic-bezier(0.22, 1, 0.36, 1) 1.6s both; }
 
 /* Centre block: title + tape strip — absolutely placed so badges never overlap */
@@ -397,6 +408,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 100svh;
   padding: calc(var(--nav-h) + clamp(2.5rem, 5vh, 4rem)) clamp(2rem, 6vw, 7rem) clamp(3rem, 6vh, 5rem);
 }
 
@@ -449,6 +461,17 @@ body {
   font-weight: 700;
 }
 
+.s5-body a {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity 0.2s;
+}
+
+.s5-body a:hover {
+  opacity: 0.65;
+}
+
 .s5-body {
   margin-top: -1rem;
   margin-bottom: clamp(1rem, 3vh, 2.5rem);
@@ -458,13 +481,14 @@ body {
 .s5-map-wrap {
   position: relative;
   width: 85%;
+  margin: 0 auto;
 }
 
 /* Parchment sits behind the iframe, extending beyond it on all sides */
 .s5-map-wrap::before {
   content: '';
   position: absolute;
-  inset: -22% -13%;
+  inset: -22% -13% -30% -13%;
   background-image: url('website/Graphics/Slide 5/map bg.png');
   background-size: 100% 100%;
   pointer-events: none;
@@ -482,10 +506,10 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 32px rgba(180, 160, 120, 0.35), 0 1px 8px rgba(150, 130, 90, 0.2);
   -webkit-mask-image: linear-gradient(to right,  transparent, black 5%, black 95%, transparent),
-                      linear-gradient(to bottom, transparent, black 4%, black 96%, transparent);
+                      linear-gradient(to bottom, transparent, black 4%, black 99%, transparent);
   -webkit-mask-composite: destination-in;
   mask-image: linear-gradient(to right,  transparent, black 5%, black 95%, transparent),
-              linear-gradient(to bottom, transparent, black 4%, black 96%, transparent);
+              linear-gradient(to bottom, transparent, black 4%, black 99%, transparent);
   mask-composite: intersect;
 }
 
@@ -764,12 +788,12 @@ body {
 
 .slide-7::before {
   left: 0;
-  background-image: url('website/BG-pattern.png');
+  background-image: url('website/BG_pattern_DVE.png');
 }
 
 .slide-7::after {
   right: 0;
-  background-image: url('website/BG-pattern.png');
+  background-image: url('website/BG_pattern_DVE.png');
 }
 
 .s7-content {
@@ -1185,4 +1209,67 @@ body {
 
   .s8-pol--left  { grid-column: 1; transform: rotate(5deg); }
   .s8-pol--right { grid-column: 2; transform: rotate(-5deg); }
+}
+
+/* ============================================================
+   AFTER PAGE — Снимки и видеа
+   ============================================================ */
+.after-slide {
+  background: var(--cream);
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--nav-h) + clamp(3rem, 6vh, 5rem)) clamp(1.5rem, 5vw, 6rem) clamp(3rem, 6vh, 5rem);
+}
+
+.after-content {
+  max-width: 780px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: clamp(0.8rem, 2vh, 1.4rem);
+}
+
+.after-title {
+  font-family: 'Madelyn', cursive;
+  font-size: clamp(4rem, 12vw, 9rem);
+  font-weight: normal;
+  color: var(--dark);
+  line-height: 1.15;
+  margin: 0;
+}
+
+.after-body {
+  font-family: 'Nunito', sans-serif;
+  font-size: clamp(0.95rem, 1.3vw, 1.15rem);
+  color: var(--blue);
+  line-height: 1.8;
+  margin: 0;
+}
+
+.after-link {
+  color: var(--blue);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity 0.2s;
+}
+
+.after-link:hover {
+  opacity: 0.6;
+}
+
+/* Polaroid */
+.after-polaroid {
+  margin-top: clamp(1rem, 3vh, 2rem);
+}
+
+.after-polaroid img {
+  display: block;
+  width: clamp(240px, 38vw, 460px);
+  height: auto;
+  filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.15));
 }
