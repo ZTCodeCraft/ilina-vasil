@@ -1077,6 +1077,11 @@ body {
     top: 8%;
   }
 
+  .s1-badge img {
+    width: 100%;
+    height: auto;
+  }
+
   .s1-badge--right {
     top: 27%;
   }
