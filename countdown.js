@@ -28,6 +28,15 @@ function update() {
 update();
 setInterval(update, 10000); // refresh every 10 s
 
+// Back-to-top button visibility
+(function () {
+  const btn = document.querySelector('.back-to-top');
+  if (!btn) return;
+  window.addEventListener('scroll', function () {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+}());
+
 // iOS Low Power Mode can block autoplay even for muted videos.
 // Retry playback on the first user gesture if autoplay was prevented.
 (function () {

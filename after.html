@@ -36,5 +36,16 @@
 
   </div><!-- /.page-wrap -->
 
+  <button class="back-to-top" aria-label="Нагоре" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8679;</button>
+
+  <script>
+    (function () {
+      var btn = document.querySelector('.back-to-top');
+      window.addEventListener('scroll', function () {
+        btn.classList.toggle('visible', window.scrollY > 400);
+      }, { passive: true });
+    }());
+  </script>
+
 </body>
 </html>
