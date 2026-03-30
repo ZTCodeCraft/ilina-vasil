@@ -1135,6 +1135,21 @@ body {
     width: 90%;
   }
 
+  /* Slide 5 — fix photo overflow and shells overlap on mobile */
+  .s5-photos {
+    width: 100%;
+  }
+
+  .s5-shells {
+    margin-top: -18%;
+  }
+
+  /* Slide 6 — push card into the paper zone of the background */
+  .slide-6 {
+    align-items: flex-start;
+    padding-top: clamp(9rem, 30svh, 14rem);
+  }
+
   .s4-deco--palm,
   .s4-deco--dove {
     display: none;
